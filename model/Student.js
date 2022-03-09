@@ -25,7 +25,9 @@ const experienceSchema= new mongoose.Schema({
 
 
 
-
+const addressSchema= new mongoose.Schema({
+    
+})
 const studentSchema =new mongoose.Schema
 ({
   
