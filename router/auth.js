@@ -9,8 +9,10 @@ router.get('/login',(req,res)=>{
 
 router.get('/',(req,res)=>{
 
-    res.send('this is home request');
+    //res.send('this is home request');
+    res.send(req.body);
 })
+
 
 
 //post request to register a student.
@@ -21,13 +23,14 @@ router.post('/register',async(req,res)=>{
             email:req.body.email,
             password:req.body.password,
             age :req.body.age,
-            location:req.body.location,
-            experience : req.body
-           
+            experience : req.body,
+            address:req.body,
+           education:req.body
          
             
             
         });
+
      
                 try{
                 //  let userStr = JSON.stringify(student);
